@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "packages/*",
+    "packages/component-library/*",
+    "packages/web-apps/*"
+
+  ],
+  "npmClient": "yarn",
+  "version": "independent",
+  "useWorkspaces": true
+  
+}

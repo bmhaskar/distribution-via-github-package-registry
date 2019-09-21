@@ -1,0 +1,68 @@
+Arguments: 
+  /home/bharatm/.nvm/versions/node/v10.16.3/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/bharatm/.yarn/bin:/home/bharatm/.vscode-server/bin/b37e54c98e1a74ba89e03073e5a3761284e3ffb0/bin:/home/bharatm/.nvm/versions/node/v10.16.3/bin:/home/bharatm/.rvm/gems/ruby-2.4.3/bin:/home/bharatm/.rvm/gems/ruby-2.4.3@global/bin:/usr/share/rvm/rubies/ruby-2.4.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2019.522.0_x64__79rhkp1fndgsc:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Docker/Docker/Resources/bin:/mnt/c/Python27/:/mnt/c/Python27/Scripts:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/BharatM/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Ruby24-x64/bin:/mnt/c/Ruby25/bin:/mnt/c/Users/BharatM/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2019.2/bin:/mnt/c/Program Files/JetBrains/RubyMine 2019.2/bin:/mnt/c/Users/BharatM/AppData/Local/Yarn/bin:/mnt/c/Users/BharatM/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/BharatM/AppData/Local/hyper/app-3.0.2/resources/bin:/snap/bin:/usr/share/rvm/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://npm.pkg.github.com/@babel%2fcli: npm package "cli" does not exist under owner "babel"
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140464:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141436:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "@bmhaskar/demo",
+    "private": true,
+    "scripts": {
+      "build": "lerna run build ",
+      "bootstrap": "lerna bootstrap"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.6.2",
+      "@babel/core": "^7.6.2",
+      "@babel/preset-env": "^7.6.2",
+      "@babel/preset-react": "^7.0.0",
+      "babel-core": "7.0.0-bridge.0",
+      "babel-loader": "^8.0.6",
+      "babel-plugin-styled-components": "^1.10.6",
+      "lerna": "^3.16.4",
+      "react": "^16.10.1",
+      "react-dom": "^16.10.1",
+      "styled-components": "^4.4.0",
+      "webpack": "^4.41.0"
+    },
+    "workspaces": [
+      "web-apps/*",
+      "component-library/*"
+    ],
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/bmhaskar/distribution-via-github-package-registry.git"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

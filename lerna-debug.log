@@ -1,0 +1,11 @@
+0 silly argv { _: [ 'add' ],
+0 silly argv   scope: '@bmhaskar/microfrontend1',
+0 silly argv   globs: [ '@bmhaskar/input' ],
+0 silly argv   lernaVersion: '3.16.4',
+0 silly argv   '$0': '/home/bharatm/.yarn/bin/lerna',
+0 silly argv   pkg: '@bmhaskar/button' }
+1 notice cli v3.16.4
+2 verbose rootPath /home/bharatm/exp/distribution-via-github-package-registry
+3 info versioning independent
+4 error Error: 404 Not Found - GET https://npm.pkg.github.com/@bmhaskar%2fbutton - npm package "button" does not exist under owner "bmhaskar"
+4 error     at res.buffer.catch.then.body (/home/bharatm/exp/distribution-via-github-package-registry/node_modules/@evocateur/npm-registry-fetch/check-response.js:104:15)
