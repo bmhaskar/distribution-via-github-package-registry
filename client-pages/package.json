@@ -1,11 +1,11 @@
 {
-  "name": "root",
+  "name": "client-pages",
   "version": "0.1.0",
   "private": true,
   "useWorkspaces": true,
   "dependencies": {
     "@babel/core": "7.6.0",
-    "@bmhaskar/microfrontend1": "0.0.3",
+    "@bmhaskar/microfrontend1": "0.0.4",
     "@svgr/webpack": "4.3.2",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
