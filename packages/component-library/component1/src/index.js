@@ -11,4 +11,4 @@ const Input = styled.input`
   width: 150px;
 `;
 
-export default Input;
+export { Input };

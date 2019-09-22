@@ -1,83 +1,85 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   cache: true,
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-    filename: 'index.js',
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+    filename: "index.js",
+    libraryTarget: "umd"
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: "./dist"
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              rootMode: 'upward',
-            },
-          },
-        ],
+              rootMode: "upward"
+            }
+          }
+        ]
       },
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.html$/,
         use: [
-          'htmllint-loader',
+          "htmllint-loader",
           {
-            loader: 'html-loader',
-            options: { minimize: true },
-          },
-        ],
-      },
-    ],
+            loader: "html-loader",
+            options: { minimize: true }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
+      }
+    })
   ],
   resolve: {
-    modules: [path.join(__dirname, '..', 'node_modules'), 'node_modules'],
+    modules: [path.join(__dirname, "..", "node_modules"), "node_modules"],
     extensions: [
-      '.js',
-      '.jsx',
-      '.sass',
-      '.scss',
-      '.css',
-      '.module.sass',
-      '.module.scss',
-      '.module.css',
-    ],
+      ".js",
+      ".jsx",
+      ".sass",
+      ".scss",
+      ".css",
+      ".module.sass",
+      ".module.scss",
+      ".module.css"
+    ]
   },
   externals: {
+    "styled-components": "styled-components",
+
     react: {
-      root: 'React',
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'react',
+      root: "React",
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "react"
     },
-    'react-dom': {
-      root: 'ReactDOM',
-      commonjs2: 'react-dom',
-      commonjs: 'react-dom',
-      amd: 'react-dom',
-      umd: 'react-dom',
-    },
-  },
+    "react-dom": {
+      root: "ReactDOM",
+      commonjs2: "react-dom",
+      commonjs: "react-dom",
+      amd: "react-dom",
+      umd: "react-dom"
+    }
+  }
 };

@@ -2,6 +2,7 @@
     "name": "@bmhaskar/input",
     "version": "0.0.1",
     "main": "dist/index.js",
+    "module": "src/index.js",
     "scripts": {
         "build": "rimraf dist && cross-env NODE_ENV=production webpack --config webpack.config.js"
     },
