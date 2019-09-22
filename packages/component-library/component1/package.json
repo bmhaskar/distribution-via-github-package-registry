@@ -1,6 +1,6 @@
 {
     "name": "@bmhaskar/input",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "dist/index.js",
     "module": "src/index.js",
     "scripts": {
@@ -20,9 +20,9 @@
     "gitHead": "7ccb97bbf3d164da5099e984d2f7635fa0ca3caf",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
-      },
-      "repository": {
+    },
+    "repository": {
         "type": "git",
         "url": "git://github.com/bmhaskar/distribution-via-github-package-registry.git"
-      }
+    }
 }

@@ -1,6 +1,6 @@
 {
     "name": "@bmhaskar/microfrontend1",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "dist/index.js",
     "module": "src/index.js",
     "useWorkspaces": true,
@@ -27,7 +27,7 @@
         "url": "git://github.com/bmhaskar/distribution-via-github-package-registry.git"
     },
     "dependencies": {
-        "@bmhaskar/button": "^0.0.1",
-        "@bmhaskar/input": "^0.0.1"
+        "@bmhaskar/button": "^0.0.2",
+        "@bmhaskar/input": "^0.0.2"
     }
 }
