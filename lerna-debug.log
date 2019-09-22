@@ -1,9 +1,80 @@
-54 error Error: Command failed: git push --follow-tags --no-verify origin master
-54 error ERROR: Permission to bmhaskar/distribution-via-github-package-registry.git denied to bharat-mhaskar-roostify.
-54 error fatal: Could not read from remote repository.
-54 error
-54 error Please make sure you have the correct access rights
-54 error and the repository exists.
-54 error
-54 error     at makeError (/home/bharatm/exp/distribution-via-github-package-registry/node_modules/execa/index.js:174:9)
-54 error     at Promise.all.then.arr (/home/bharatm/exp/distribution-via-github-package-registry/node_modules/execa/index.js:278:16)
+0 silly argv { _: [ 'version' ],
+0 silly argv   lernaVersion: '3.16.4',
+0 silly argv   '$0': '/home/bharatm/.yarn/bin/lerna' }
+1 notice cli v3.16.4
+2 verbose rootPath /home/bharatm/exp/distribution-via-github-package-registry
+3 info versioning independent
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch master
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 3
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "08d84a8" => {"refCount":"4","sha":"08d84a8","isDirty":false}
+14 info Assuming all packages changed
+15 verbose updated @bmhaskar/input
+16 verbose updated @bmhaskar/button
+17 verbose updated @bmhaskar/microfrontend1
+18 verbose updated @bmhaskar/microfrontend2
+19 verbose git-describe undefined => "08d84a8"
+20 silly git-describe parsed => {"refCount":"4","sha":"08d84a8","isDirty":false}
+21 info execute Skipping releases
+22 silly lifecycle No script for "preversion" in "@bmhaskar/demo", continuing
+23 silly lifecycle No script for "preversion" in "@bmhaskar/input", continuing
+24 silly lifecycle No script for "preversion" in "@bmhaskar/button", continuing
+25 silly lifecycle No script for "preversion" in "@bmhaskar/microfrontend2", continuing
+26 silly lifecycle No script for "version" in "@bmhaskar/microfrontend2", continuing
+27 silly lifecycle No script for "version" in "@bmhaskar/input", continuing
+28 silly lifecycle No script for "version" in "@bmhaskar/button", continuing
+29 silly lifecycle No script for "preversion" in "@bmhaskar/microfrontend1", continuing
+30 silly lifecycle No script for "version" in "@bmhaskar/microfrontend1", continuing
+31 silly lifecycle No script for "version" in "@bmhaskar/demo", continuing
+32 silly gitAdd [ '/home/bharatm/exp/distribution-via-github-package-registry/packages/web-apps/microfrontend2/package.json',
+32 silly gitAdd   '/home/bharatm/exp/distribution-via-github-package-registry/packages/component-library/component1/package.json',
+32 silly gitAdd   '/home/bharatm/exp/distribution-via-github-package-registry/packages/component-library/component2/package.json',
+32 silly gitAdd   '/home/bharatm/exp/distribution-via-github-package-registry/packages/web-apps/microfrontend1/package.json' ]
+33 silly gitCommit Publish
+33 silly gitCommit
+33 silly gitCommit  - @bmhaskar/input@0.0.3
+33 silly gitCommit  - @bmhaskar/button@0.0.3
+33 silly gitCommit  - @bmhaskar/microfrontend1@0.0.3
+33 silly gitCommit  - @bmhaskar/microfrontend2@0.0.3
+34 verbose git [ 'commit',
+34 verbose git   '-F',
+34 verbose git   '/tmp/a21bd5a5-1117-4c68-bbfc-b98aad3f9c05/lerna-commit.txt' ]
+35 silly gitTag @bmhaskar/input@0.0.3
+36 verbose git [ 'tag', '@bmhaskar/input@0.0.3', '-m', '@bmhaskar/input@0.0.3' ]
+37 silly gitTag @bmhaskar/button@0.0.3
+38 verbose git [ 'tag',
+38 verbose git   '@bmhaskar/button@0.0.3',
+38 verbose git   '-m',
+38 verbose git   '@bmhaskar/button@0.0.3' ]
+39 silly gitTag @bmhaskar/microfrontend1@0.0.3
+40 verbose git [ 'tag',
+40 verbose git   '@bmhaskar/microfrontend1@0.0.3',
+40 verbose git   '-m',
+40 verbose git   '@bmhaskar/microfrontend1@0.0.3' ]
+41 silly gitTag @bmhaskar/microfrontend2@0.0.3
+42 verbose git [ 'tag',
+42 verbose git   '@bmhaskar/microfrontend2@0.0.3',
+42 verbose git   '-m',
+42 verbose git   '@bmhaskar/microfrontend2@0.0.3' ]
+43 silly lifecycle No script for "postversion" in "@bmhaskar/input", continuing
+44 silly lifecycle No script for "postversion" in "@bmhaskar/button", continuing
+45 silly lifecycle No script for "postversion" in "@bmhaskar/microfrontend1", continuing
+46 silly lifecycle No script for "postversion" in "@bmhaskar/microfrontend2", continuing
+47 silly lifecycle No script for "postversion" in "@bmhaskar/demo", continuing
+48 info git Pushing tags...
+49 silly gitPush origin master
+50 error Error: Command failed: git push --follow-tags --no-verify origin master
+50 error ERROR: Permission to bmhaskar/distribution-via-github-package-registry.git denied to bharat-mhaskar-roostify.
+50 error fatal: Could not read from remote repository.
+50 error
+50 error Please make sure you have the correct access rights
+50 error and the repository exists.
+50 error
+50 error     at makeError (/home/bharatm/exp/distribution-via-github-package-registry/node_modules/execa/index.js:174:9)
+50 error     at Promise.all.then.arr (/home/bharatm/exp/distribution-via-github-package-registry/node_modules/execa/index.js:278:16)
