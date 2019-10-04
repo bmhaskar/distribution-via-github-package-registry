@@ -47,5 +47,5 @@ Shows possible code to maintain multiple components and microfrontends managed w
 
 ## Long term vision 
 
-Is to wrap these web-apps as web-components or custom elements (based on what becomes stable) so that they can be shared with 
+Is to wrap these web-apps as web-components or custom elements (based on what becomes stable) so that they can be shared with other developers / clients 
  
