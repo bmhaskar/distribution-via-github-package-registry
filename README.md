@@ -1,5 +1,5 @@
 # distribution-via-github-package-registry
-This is a project demonstarting distribution of npm packages via github package registry
+This is strategy to do migration of monolith to React based UI with a project demonstarting distribution of npm packages via github package registry 
 
 ## Problem
 
